@@ -7,10 +7,7 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      //models.user.belongsToMany(models.share, { through: share_owner });
-      //models.share.belongsToMany(models.user, { through: share_owner });
-    }
+    static associate(models) {}
   }
   share_owner.init(
     {

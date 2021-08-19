@@ -64,12 +64,11 @@ exports.buyShare = async function (req, res, next) {
   if (isOwn == null) {
     //create ownership
     try {
-      const newShareOwner = await share_owner.create({
+      await share_owner.create({
         ownerId: userId,
         shareCode: shareCode,
         quantity: buyQuantity,
       });
-      console.log(newShareOwner);
     } catch (error) {
       console.log('Error: ' + error);
     }
