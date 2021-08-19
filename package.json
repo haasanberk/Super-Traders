@@ -1,0 +1,31 @@
+{
+  "name": "eva_hasanberk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "make-model": "npx sequelize-cli model:generate --name user --attributes username:string",
+    "make-seed": "npx sequelize-cli seed:generate --name demo-user",
+    "seed": "npx sequelize-cli db:seed:all",
+    "migrate": "npx sequelize-cli db:migrate",
+    "down": "npx sequelize-cli db:migrate:undo",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  }
+}
