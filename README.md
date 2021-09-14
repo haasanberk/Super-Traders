@@ -1,4 +1,4 @@
-# Super_Traders_HasanBerk
+# Super_Traders
 
 ## Running the application
 
